@@ -1,0 +1,18 @@
+<%- layout('boilerplate') %>
+
+<h1>getFitNowMembers</h1>
+<a href="/getFitNowMember/new" class="btn btn-primary">Add New getFitNowMember</a>
+<% for(let getFitNowMember of getFitNowMemberList){ %>
+    <div class="card" mb-3>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">getFitNowMember Name : <%= getFitNowMember.name %> </h5>
+                    <p class="card-text">getFitNowMember status : <%= getFitNowMember.membership_status %></p>
+                    <a class="btn btn-primary" href="/getFitNowMember/<%=getFitNowMember.id%>">View getFitNowMember details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% } %>

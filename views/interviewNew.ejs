@@ -1,0 +1,28 @@
+<%- layout('boilerplate') %>
+
+
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <form action="/interview" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="person_id">person_id</label>
+                <input class="form-control" type="number" id="person_id" name="interview[person_id]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="transcript">transcript</label>
+                <input class="form-control" type="text" id="transcript" name="interview[transcript]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <button class="btn btn-success">Add interview</button>
+            </div>
+        </form>
+    </div>
+</div>

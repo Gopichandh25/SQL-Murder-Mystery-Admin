@@ -1,0 +1,23 @@
+<%- layout('boilerplate') %>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">facebookEventCheckin's information</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">person id : <%= facebookEventCheckin.person_id  %></li>
+                    <li class="list-group-item">event_id : <%=facebookEventCheckin.event_id%></li>
+                    <li class="list-group-item">event_name : <%=facebookEventCheckin.event_name %></li>
+                    <li class="list-group-item">date : <%=facebookEventCheckin.date %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 ">
+        <form class="d-inline" action="/facebookEventCheckin/<%=facebookEventCheckin.event_id%>?_method=DELETE" method="POST">
+            <button class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+
+</div>

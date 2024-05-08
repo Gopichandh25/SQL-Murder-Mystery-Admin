@@ -1,0 +1,28 @@
+<%- layout('boilerplate') %>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Driver's information</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID : <%= driver.id  %></li>
+                    <li class="list-group-item">Age : <%=driver.age%></li>
+                    <li class="list-group-item">Height : <%=driver.height %></li>
+                    <li class="list-group-item">Eye color : <%=driver.eye_color %></li>
+                    <li class="list-group-item">Hair color : <%=driver.hair_color %></li>
+                    <li class="list-group-item">gender : <%=driver.gender %></li>
+                    <li class="list-group-item">Plate Number : <%=driver.plate_number%></li>
+                    <li class="list-group-item">Car Make : <%=driver.car_make %></li>
+                    <li class="list-group-item">Car Model : <%=driver.car_model%></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 ">
+        <form class="d-inline" action="/driversLicense/<%=driver.id%>?_method=DELETE" method="POST">
+            <button class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+
+</div>

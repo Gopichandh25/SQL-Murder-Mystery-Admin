@@ -1,0 +1,17 @@
+<%- layout('boilerplate') %>
+
+<h1>persons</h1>
+<a href="/person/new" class="btn btn-primary">Add New Person</a>
+<% for(let person of personList){ %>
+    <div class="card" mb-3>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">person Name : <%= person.name %> </h5>
+                    <a class="btn btn-primary" href="/person/<%=person.id%>">View person details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% } %>

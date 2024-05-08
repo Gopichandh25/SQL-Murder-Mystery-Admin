@@ -1,0 +1,16 @@
+#index{
+    background-image: url('https://plus.unsplash.com/premium_photo-1690586341522-46fdd3185d38?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    color: aliceblue;
+}
+
+#main_id{
+    margin-top: 10%;
+    margin-left: 20%;
+}

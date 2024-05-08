@@ -1,0 +1,18 @@
+<%- layout('boilerplate') %>
+
+<h1>Facebook Events</h1>
+<a href="/facebookEventCheckin/new" class="btn btn-primary">Add New facebook event</a>
+<% for(let event of facebookEventCheckinList){ %>
+    <div class="card" mb-3>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Event Name : <%= event.event_name %> </h5>
+                    <p class="card-text">Person ID : <%= event.person_id %></p>
+                    <a class="btn btn-primary" href="/facebookEventCheckin/<%=event.event_id%>">View Event details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% } %>

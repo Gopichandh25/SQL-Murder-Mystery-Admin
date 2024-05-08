@@ -1,0 +1,48 @@
+<%- layout('boilerplate') %>
+
+
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <form action="/getFitNowMember" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="ID">ID</label>
+                <input class="form-control" type="text" id="ID" name="getFitNowMember[id]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="person_id">person_id</label>
+                <input class="form-control" type="number" id="person_id" name="getFitNowMember[person_id]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="name">name</label>
+                <input class="form-control" type="text" id="name" name="getFitNowMember[name]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="membership_start_date">membership_start_date</label>
+                <input class="form-control" type="number" id="membership_start_date" name="getFitNowMember[membership_start_date]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="membership_status">membership_status</label>
+                <input class="form-control" type="text" id="membership_status" name="getFitNowMember[membership_status]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Add getFitNowMember</button>
+            </div>
+        </form>
+    </div>
+</div>

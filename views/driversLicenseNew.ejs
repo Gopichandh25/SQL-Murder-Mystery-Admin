@@ -1,0 +1,76 @@
+<%- layout('boilerplate') %>
+
+
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <form action="/driversLicense" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="ID">ID</label>
+                <input class="form-control" type="number" id="ID" name="driver[id]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="age">age</label>
+                <input class="form-control" type="number" id="age" name="driver[age]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="height">height</label>
+                <input class="form-control" type="number" id="height" name="driver[height]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="eye_color">eye_color</label>
+                <input class="form-control" type="text" id="eye_color" name="driver[eye_color]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="hair_color">hair_color</label>
+                <input class="form-control" type="text" id="hair_color" name="driver[hair_color]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="gender">gender</label>
+                <input class="form-control" type="text" id="gender" name="driver[gender]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="plate_number">plate_number</label>
+                <input class="form-control" type="text" id="plate_number" name="driver[plate_number]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="car_make">car_make</label>
+                <input class="form-control" type="text" id="car_make" name="driver[car_make]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="car_model">car_model</label>
+                <input class="form-control" type="text" id="car_model" name="driver[car_model]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Add Driver</button>
+            </div>
+        </form>
+    </div>
+</div>

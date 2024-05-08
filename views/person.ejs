@@ -1,0 +1,26 @@
+<%- layout('boilerplate') %>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">person's information</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID : <%= person.id  %></li>
+                    <li class="list-group-item">name : <%=person.name%></li>
+                    <li class="list-group-item">license_id : <%=person.license_id %></li>
+                    <li class="list-group-item">address_number : <%=person.address_number %></li>
+                    <li class="list-group-item">address_street_name : <%=person.address_street_name %></li>
+                    <li class="list-group-item">ssn : <%=person.ssn %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 ">
+        <form class="d-inline" action="/person/<%=person.id%>?_method=DELETE" method="POST">
+            <button class="btn btn-danger">Delete</button>
+        </form>
+        <a class="btn btn-primary"href=$`/person/<%= person.id %>/edit`>Edit person</a>
+    </div>
+
+</div>

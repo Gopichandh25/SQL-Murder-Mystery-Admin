@@ -1,0 +1,55 @@
+<%- layout('boilerplate') %>
+
+
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <form action="/person" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="ID">ID</label>
+                <input class="form-control" type="number" id="ID" name="person[id]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="name">name</label>
+                <input class="form-control" type="text" id="name" name="person[name]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="license_id">license_id</label>
+                <input class="form-control" type="number" id="license_id" name="person[license_id]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="address_number">address_number</label>
+                <input class="form-control" type="number" id="address_number" name="person[address_number]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="address_street_name">address_street_name</label>
+                <input class="form-control" type="text" id="address_street_name" name="person[address_street_name]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="ssn">ssn</label>
+                <input class="form-control" type="number" id="ssn" name="person[ssn]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Add person</button>
+            </div>
+        </form>
+    </div>
+</div>

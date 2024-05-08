@@ -1,0 +1,18 @@
+<%- layout('boilerplate') %>
+
+<h1>driverslicense</h1>
+<a href="/driversLicense/new" class="btn btn-primary">Add New Driver</a>
+<% for(let driver of driversLicenseList){ %>
+    <div class="card" mb-3>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Driver's ID : <%= driver.id %> </h5>
+                    <p class="card-text">plate number : <%= driver.age %></p>
+                    <a class="btn btn-primary" href="/driversLicense/<%=driver.id%>">View Driver details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% } %>

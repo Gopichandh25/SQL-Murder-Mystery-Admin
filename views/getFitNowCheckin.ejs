@@ -1,0 +1,29 @@
+<%- layout('boilerplate') %>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">getFitNowCheckin's information</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">membership_id : <%= getFitNowCheckin.membership_id %>
+                        </li>
+                        <li class="list-group-item">check_in_date : <%=getFitNowCheckin.check_in_date%>
+                        </li>
+                        <li class="list-group-item">check_in_time : <%=getFitNowCheckin.check_in_time %>
+                        </li>
+                        <li class="list-group-item">check_out_time : <%=getFitNowCheckin.check_out_time %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 ">
+            <form class="d-inline"
+                action="/getFitNowCheckin/<%=getFitNowCheckin.membership_id%>/<%=getFitNowCheckin.check_in_date%>/<%=getFitNowCheckin.check_in_time%>?_method=DELETE"
+                method="POST">
+                <button class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+
+    </div>

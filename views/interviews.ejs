@@ -1,0 +1,17 @@
+<%- layout('boilerplate') %>
+
+<h1>interviews</h1>
+<a href="/interview/new" class="btn btn-primary">Add New interview</a>
+<% for(let interview of interviewList){ %>
+    <div class="card" mb-3>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">interview person ID : <%= interview.person_id %> </h5>
+                    <a class="btn btn-primary" href="/interview/<%=interview.person_id%>">View interview details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% } %>

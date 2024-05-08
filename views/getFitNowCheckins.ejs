@@ -1,0 +1,20 @@
+<%- layout('boilerplate') %>
+
+    <h1>getFitNowCheckins</h1>
+    <a href="/getFitNowCheckin/new" class="btn btn-primary">Add New getFitNowCheckin</a>
+    <% for(let getFitNowCheckin of getFitNowCheckinList){ %>
+        <div class="card" mb-3>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">getFitNowCheckin Membership ID : <%= getFitNowCheckin.membership_id %>
+                        </h5>
+                        <a class="btn btn-primary"
+                            href="/getFitNowCheckin/<%=getFitNowCheckin.membership_id%>/<%=getFitNowCheckin.check_in_date%>/<%=getFitNowCheckin.check_in_time%>">
+                            View getFitNowCheckin details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <% } %>

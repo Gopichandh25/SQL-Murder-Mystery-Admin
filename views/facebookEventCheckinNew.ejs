@@ -1,0 +1,41 @@
+<%- layout('boilerplate') %>
+
+
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <form action="/facebookEventCheckin" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="person_id">person_id</label>
+                <input class="form-control" type="number" id="person_id" name="event[person_id]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="event_id">event_id</label>
+                <input class="form-control" type="number" id="event_id" name="event[event_id]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="event_name">event_name</label>
+                <input class="form-control" type="text" id="event_name" name="event[event_name]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="date">date</label>
+                <input class="form-control" type="number" id="date" name="event[date]">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Add Event</button>
+            </div>
+        </form>
+    </div>
+</div>
